@@ -1,0 +1,96 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiIntersect", "ApiIntersect\ApiIntersect.csproj", "{CD767D93-6C99-4D6A-A303-3C139A73400E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Xamarin.Apple", "Xamarin.Apple", "{3948E780-D0A7-4B53-B05F-8CB67FBC988C}"
+	ProjectSection(SolutionItems) = preProject
+		Xamarin.Apple\Xamarin.Apple.props = Xamarin.Apple\Xamarin.Apple.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Apple.Core", "Xamarin.Apple\Xamarin.Apple.Core.csproj", "{D4A04D0C-1FFB-446C-9F5D-73BC5365F03E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Apple.iOSTV", "Xamarin.Apple\Xamarin.Apple.iOSTV.csproj", "{A0754709-8656-4F07-AB0A-B0FEBA5B4B3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Apple.iOSMac", "Xamarin.Apple\Xamarin.Apple.iOSMac.csproj", "{40C63082-B326-4512-AC93-1A09187A8C44}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{C0F4AC37-F21D-4677-95EB-ECDD695455F1}"
+	ProjectSection(SolutionItems) = preProject
+		Build\BuildIntersectionNuGet.targets = Build\BuildIntersectionNuGet.targets
+		Build\BuildNuGet.targets = Build\BuildNuGet.targets
+		Build\common.nuspec.xdt = Build\common.nuspec.xdt
+		Build\Facade.csproj = Build\Facade.csproj
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Apple.iOSTVMac", "Xamarin.Apple\Xamarin.Apple.iOSTVMac.csproj", "{759FA52E-52F5-443E-A204-5485D7A1CC91}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Xamarin.Pcl", "Xamarin.Pcl", "{EB28236F-802A-4F68-9B30-9A5CF1F2279F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Pcl.iOS", "Xamarin.Pcl\Xamarin.Pcl.iOS.csproj", "{B3D20D2F-CACD-4819-808E-C16361A2F32A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Pcl.Android", "Xamarin.Pcl\Xamarin.Pcl.Android.csproj", "{726E33EA-2EFF-4B61-9A34-B0F18739A19F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Pcl.JavaInterop", "Xamarin.Pcl\Xamarin.Pcl.JavaInterop.csproj", "{80703A85-3983-4D97-835C-9AD9048A4521}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD767D93-6C99-4D6A-A303-3C139A73400E}.Debug|x86.ActiveCfg = Debug|x86
+		{CD767D93-6C99-4D6A-A303-3C139A73400E}.Debug|x86.Build.0 = Debug|x86
+		{CD767D93-6C99-4D6A-A303-3C139A73400E}.Release|x86.ActiveCfg = Release|x86
+		{CD767D93-6C99-4D6A-A303-3C139A73400E}.Release|x86.Build.0 = Release|x86
+		{D4A04D0C-1FFB-446C-9F5D-73BC5365F03E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D4A04D0C-1FFB-446C-9F5D-73BC5365F03E}.Debug|x86.Build.0 = Debug|Any CPU
+		{D4A04D0C-1FFB-446C-9F5D-73BC5365F03E}.Release|x86.ActiveCfg = Release|Any CPU
+		{D4A04D0C-1FFB-446C-9F5D-73BC5365F03E}.Release|x86.Build.0 = Release|Any CPU
+		{A0754709-8656-4F07-AB0A-B0FEBA5B4B3C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A0754709-8656-4F07-AB0A-B0FEBA5B4B3C}.Debug|x86.Build.0 = Debug|Any CPU
+		{A0754709-8656-4F07-AB0A-B0FEBA5B4B3C}.Release|x86.ActiveCfg = Release|Any CPU
+		{A0754709-8656-4F07-AB0A-B0FEBA5B4B3C}.Release|x86.Build.0 = Release|Any CPU
+		{40C63082-B326-4512-AC93-1A09187A8C44}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{40C63082-B326-4512-AC93-1A09187A8C44}.Debug|x86.Build.0 = Debug|Any CPU
+		{40C63082-B326-4512-AC93-1A09187A8C44}.Release|x86.ActiveCfg = Release|Any CPU
+		{40C63082-B326-4512-AC93-1A09187A8C44}.Release|x86.Build.0 = Release|Any CPU
+		{759FA52E-52F5-443E-A204-5485D7A1CC91}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{759FA52E-52F5-443E-A204-5485D7A1CC91}.Debug|x86.Build.0 = Debug|Any CPU
+		{759FA52E-52F5-443E-A204-5485D7A1CC91}.Release|x86.ActiveCfg = Release|Any CPU
+		{759FA52E-52F5-443E-A204-5485D7A1CC91}.Release|x86.Build.0 = Release|Any CPU
+		{B3D20D2F-CACD-4819-808E-C16361A2F32A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B3D20D2F-CACD-4819-808E-C16361A2F32A}.Release|x86.ActiveCfg = Release|Any CPU
+		{B3D20D2F-CACD-4819-808E-C16361A2F32A}.Release|x86.Build.0 = Release|Any CPU
+		{B3D20D2F-CACD-4819-808E-C16361A2F32A}.Debug|x86.Build.0 = Debug|Any CPU
+		{726E33EA-2EFF-4B61-9A34-B0F18739A19F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{726E33EA-2EFF-4B61-9A34-B0F18739A19F}.Release|x86.ActiveCfg = Release|Any CPU
+		{726E33EA-2EFF-4B61-9A34-B0F18739A19F}.Release|x86.Build.0 = Release|Any CPU
+		{726E33EA-2EFF-4B61-9A34-B0F18739A19F}.Debug|x86.Build.0 = Debug|Any CPU
+		{80703A85-3983-4D97-835C-9AD9048A4521}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{80703A85-3983-4D97-835C-9AD9048A4521}.Debug|x86.Build.0 = Debug|Any CPU
+		{80703A85-3983-4D97-835C-9AD9048A4521}.Release|x86.ActiveCfg = Release|Any CPU
+		{80703A85-3983-4D97-835C-9AD9048A4521}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D4A04D0C-1FFB-446C-9F5D-73BC5365F03E} = {3948E780-D0A7-4B53-B05F-8CB67FBC988C}
+		{A0754709-8656-4F07-AB0A-B0FEBA5B4B3C} = {3948E780-D0A7-4B53-B05F-8CB67FBC988C}
+		{40C63082-B326-4512-AC93-1A09187A8C44} = {3948E780-D0A7-4B53-B05F-8CB67FBC988C}
+		{759FA52E-52F5-443E-A204-5485D7A1CC91} = {3948E780-D0A7-4B53-B05F-8CB67FBC988C}
+		{B3D20D2F-CACD-4819-808E-C16361A2F32A} = {EB28236F-802A-4F68-9B30-9A5CF1F2279F}
+		{726E33EA-2EFF-4B61-9A34-B0F18739A19F} = {EB28236F-802A-4F68-9B30-9A5CF1F2279F}
+		{80703A85-3983-4D97-835C-9AD9048A4521} = {EB28236F-802A-4F68-9B30-9A5CF1F2279F}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.FileWidth = 120
+		$1.TabsToSpaces = False
+		$1.inheritsSet = VisualStudio
+		$1.inheritsScope = text/plain
+		$1.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $2
+		$2.inheritsSet = Mono
+		$2.inheritsScope = text/x-csharp
+		$2.scope = text/x-csharp
+	EndGlobalSection
+EndGlobal
