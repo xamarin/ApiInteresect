@@ -50,8 +50,8 @@
     <PackageReference Include="ICSharpCode.NRefactory" Version="5.5.1" PrivateAssets="all" />
     <PackageReference Include="ICSharpCode.Decompiler" Version="2.3.1" PrivateAssets="all" />
     <PackageReference Include="Mono.Options" Version="4.4.0.0" PrivateAssets="all" />
-    <PackageReference Include="NuGet.Build.Packaging" Version="0.1.306" PrivateAssets="all" />
     <PackageReference Include="SlowMonkey" Version="1.1.1" PrivateAssets="all" />
+    <PackageReference Include="NuGet.Build.Packaging" Version="[0.1.311,)" PrivateAssets="all" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
