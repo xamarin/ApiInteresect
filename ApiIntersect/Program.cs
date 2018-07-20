@@ -49,6 +49,7 @@ namespace ApiIntersect
 		static bool stripSerializableAttribute = true;
 		static bool redirectInteropServices = true;
 		static bool keepInternalCtors = false;
+		static bool ignoreAssemblyResolutionFailures;
 
 		static int verbosity = 0;
 
@@ -76,7 +77,8 @@ namespace ApiIntersect
 				{ "o|output=", "Path to output the generated code", o => outputPath = o },
 				{ "h|help", "Show help", _ => printHelp = true },
 				{ "v|verbose", "Increase output verbosity", _ => verbosity++ },
-				{ "r|refPath=", "Directory to resolve assembly references", r => refPaths.Add (r) }
+				{ "r|refPath=", "Directory to resolve assembly references", r => refPaths.Add (r) },
+				{ "iua|ignore-unresolved-assemblies", "Ignore failure to resolve an assembly", _ => ignoreAssemblyResolutionFailures = true }
 			};
 
 			try {
@@ -110,7 +112,9 @@ namespace ApiIntersect
 					Console.Error.WriteLine ($"ERROR: no framework found at {frameworkPath}");
 					return 1;
 				}
-				readerParameters.AssemblyResolver = new FrameworkAssemblyResolver (frameworkPath, refPaths);
+				readerParameters.AssemblyResolver = new FrameworkAssemblyResolver (frameworkPath, refPaths) {
+					ThrowOnResolveFailure = !ignoreAssemblyResolutionFailures
+				};
 				readerParameters.MetadataResolver = new HackMetadataResolver (readerParameters.AssemblyResolver);
 
 				//PCLs don't have System.SerializableAttribute

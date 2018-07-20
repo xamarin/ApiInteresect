@@ -30,6 +30,8 @@ namespace ApiIntersect
 						AddAssembly (asm);
 		}
 
+		public bool ThrowOnResolveFailure { get; set; } = true;
+
 		public AssemblyDefinition Resolve (string fullName)
 		{
 			return Resolve (AssemblyNameReference.Parse (fullName));
@@ -49,7 +51,11 @@ namespace ApiIntersect
 		{
 			AssemblyDefinition asm;
 			if (!assemblies.TryGetValue (name, out asm)) {
-				throw new Exception ($"Could not resolve {name}");
+				if (ThrowOnResolveFailure) {
+					throw new Exception ($"Could not resolve {name}");
+				} else {
+					Console.Error.WriteLine ($"WARNING: Could not resolve {name}");
+				}
 			}
 			return asm;
 		}
