@@ -825,6 +825,14 @@ namespace ApiIntersect
 
 		static void DumpTypes (List<TypeDefinition> types, string baseDir)
 		{
+			if (types == null || !types.Any ()) {
+				WriteWarning (
+					"Sorry, the intersection between types in the different assemblies is empty. " +
+					"May it be possible you were trying Bait-and-switch on types inheriting on dependencies? " +
+					"In such case that technique won't work for this scenario, please disable it.");
+				return;
+			}
+
 			var module = types.First ().Module;
 
 			var context = new DecompilerContext (module);
